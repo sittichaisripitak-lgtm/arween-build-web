@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOR + BOQ Analyzer</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    textarea {
+      width: 90%;
+      height: 200px;
+      margin-bottom: 1rem;
+      background: #2a2a2a;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    button {
+      background: orange;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    pre {
+      background: #333;
+      text-align: left;
+      padding: 1rem;
+      margin-top: 1rem;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1>TOR + BOQ Analyzer</h1>
+  <p>วาง TOR หรือ BOQ ที่ต้องการให้วิเคราะห์</p>
+  <textarea id="inputTOR" placeholder="ใส่ข้อความ TOR หรือ BOQ..."></textarea><br>
+  <button onclick="analyzeTOR()">Start Analysis</button>
+  <pre id="outputTOR"></pre>
+
+  <script>
+    function analyzeTOR() {
+      const input = document.getElementById('inputTOR').value.trim();
+      const output = document.getElementById('outputTOR');
+      if (!input) {
+        output.textContent = "⚠️ กรุณาใส่ข้อมูล TOR หรือ BOQ ก่อน";
+        return;
+      }
+      // 模拟การวิเคราะห์ (จะใช้ AI แท้ผ่าน API ในภายหลัง)
+      const analyzed = `📌 วิเคราะห์ TOR/BOQ:\n\n- จำนวนคำ: ${input.split(/\s+/).length} คำ\n- มีหัวข้อหลักหรือไม่: ${input.includes('ขอบเขต') ? '✅ พบหัวข้อ "ขอบเขตงาน"' : '❌ ไม่พบ'}\n- สถานะ: ⚙️ ผ่านขั้นต้น`;
+      output.textContent = analyzed;
+    }
+  </script>
+</body>
+</html>
