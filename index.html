@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ARWEEN–BUILD™ Tools</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .tool-card {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+    .tool-card:hover {
+      background: #333;
+      transform: scale(1.03);
+    }
+    .tool-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #00d4ff;
+    }
+    .tool-description {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+    .tool-button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #00d4ff;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    .tool-button:hover {
+      background: #00aacc;
+    }
+  </style>
+</head>
+<body>
+  <h1>ARWEEN–BUILD™ Tool System</h1>
+  <div class="grid">
+    <div class="tool-card">
+      <div class="tool-title">Document Analysis (TOR + BOQ)</div>
+      <div class="tool-description">ตรวจสอบ TOR, เงื่อนไข และ BOQ อัตโนมัติ</div>
+      <button class="tool-button">Start Analysis</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Building Structure Analysis</div>
+      <div class="tool-description">วิเคราะห์ความสูง ระบบรับน้ำหนัก Slab/Beam</div>
+      <button class="tool-button">Analyze Structure</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Material Replication Analysis</div>
+      <div class="tool-description">ประเมินวัสดุใช้ซ้ำ อันตราย และฝังกลบ</div>
+      <button class="tool-button">Assess Materials</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Logistics Planning</div>
+      <div class="tool-description">คำนวณเที่ยวรถ จุดรอ เวลาขนส่งวัสดุ</div>
+      <button class="tool-button">Plan Logistics</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Impact Analysis</div>
+      <div class="tool-description">ประเมินฝุ่น PM เสียง จราจรใกล้พื้นที่</div>
+      <button class="tool-button">Assess Impact</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Monitoring and Evaluation</div>
+      <div class="tool-description">แผน Drone Scan และ IoT Monitoring</div>
+      <button class="tool-button">Monitor System</button>
+    </div>
+    <div class="tool-card">
+      <div class="tool-title">Document Export Tool</div>
+      <div class="tool-description">รวม Workplan รายงานวัสดุ TOR สรุป</div>
+      <button class="tool-button">Export Documents</button>
+    </div>
+  </div>
+</body>
+</html>
